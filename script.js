@@ -12,3 +12,15 @@ console.log("Links: ", myLinks.length);
 
 //var sidebar = document.getElementById("sidebar");
 //console.log(sidebar.innerHTML);
+
+//Create the element
+var newHeading =  document.createElement("h1");
+var newParagraph = document. createElement("p");
+
+//to add content, either use innerHTML
+newHeading.innerHTML = "Did you know?";
+newParagraph.innerHTML = "Califonia produces over 17 millions gallons of wine each year!";
+
+//and we still need to attach them to the document !
+document.getElementById("trivia").appendChild(newHeading);
+document.getElementById("trivia").appendChild(newParagraph);
