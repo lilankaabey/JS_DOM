@@ -18,8 +18,15 @@ var newHeading =  document.createElement("h1");
 var newParagraph = document. createElement("p");
 
 //to add content, either use innerHTML
-newHeading.innerHTML = "Did you know?";
-newParagraph.innerHTML = "Califonia produces over 17 millions gallons of wine each year!";
+//newHeading.innerHTML = "Did you know?";
+//newParagraph.innerHTML = "Califonia produces over 17 millions gallons of wine each year!";
+
+//OR create child nodes manually
+var h1Text = document.createTextNode("Did You Know?");
+var paraText = document.createTextNode("Califonia produces over 17 million gallons of wine each year!");
+//and add them as child nodes to new elements
+newHeading.appendChild(h1Text);
+newParagraph.appendChild(paraText);
 
 //and we still need to attach them to the document !
 document.getElementById("trivia").appendChild(newHeading);
