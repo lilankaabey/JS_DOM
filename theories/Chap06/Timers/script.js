@@ -5,6 +5,7 @@ function simpleMessage() {
 }
 
 // settimeout is in milliseconds
+//setTimeout(simpleMessage,5000);
 
 var myImage = document.getElementById("mainImage");
 
@@ -21,4 +22,4 @@ function changeImage() {
 }
 
 // setInterval is also in milliseconds
-//setInterval(changeImage,5000);
+setInterval(changeImage,2000);
